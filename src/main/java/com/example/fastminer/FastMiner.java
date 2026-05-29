@@ -9,6 +9,6 @@ public class FastMiner implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("FastMiner загружен! Скорость добычи x1.5");
+        LOGGER.info("FastMiner loaded! Mining speed x1.5");
     }
 }
