@@ -1,0 +1,49 @@
+# Gradle
+.gradle/
+build/
+out/
+classes/
+gradle-app.setting
+
+# Java
+*.class
+*.log
+*.ctxt
+
+# Intellij IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+*.swp
+*.swo
+*~
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+.settings/
+*.code-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.tmp
+
+# Fabric / Minecraft
+run/
+.minecraft/
+*.json.orig
+logs/
+crash-reports/
