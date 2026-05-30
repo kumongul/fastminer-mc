@@ -5,10 +5,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class FastMiner implements ModInitializer {
-    public static final Logger LOGGER = LoggerFactory.getLogger("fastminer");
+    public static final String MOD_ID = "fastminer";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     @Override
     public void onInitialize() {
-        LOGGER.info("FastMiner loaded! Mining speed x1.5");
+        FastMinerConfig.load();
+        LOGGER.info("FastMiner loaded! enabled={}, multiplier={}x",
+                FastMinerConfig.get().enabled,
+                FastMinerConfig.get().speedMultiplier);
     }
 }
