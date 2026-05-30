@@ -3,16 +3,22 @@
   "id": "fastminer",
   "version": "${version}",
   "name": "Fast Miner",
-  "description": "Multiplies mining speed of all tools by 1.5x",
+  "description": "Multiplies mining speed of all tools by a configurable multiplier (1.0x–10.0x)",
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
-    "main": ["com.example.fastminer.FastMiner"]
+    "main": ["com.example.fastminer.FastMiner"],
+    "client": ["com.example.fastminer.FastMinerClient"],
+    "modmenu": ["com.example.fastminer.modmenu.FastMinerModMenuIntegration"]
   },
   "mixins": ["fastminer.mixins.json"],
   "depends": {
     "fabricloader": ">=0.18.4",
     "fabric-api": "*",
-    "minecraft": "26.1.2"
+    "minecraft": "26.1.2",
+    "cloth-config": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
   }
 }
